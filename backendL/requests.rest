@@ -1,0 +1,146 @@
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+  "firstname": "rairu",
+  "lastname": "crausus",
+  "email": "craususrhyle@gmail.com",
+  "password": "rairudesu"
+}
+
+###
+
+POST http://192.168.8.166:8000/api/login
+Content-Type: application/json
+
+{
+  "email": "craususrhyle@gmail.com",
+  "password": "rairudesu"
+}
+
+###
+
+GET http://192.168.8.166:8000/api/user/profile/65a2437d8413435fd8141eae
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMjQzN2Q4NDEzNDM1ZmQ4MTQxZWFlIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA1MTQzNTU4LCJleHAiOjE3MDUxNDcxNTh9.AKfTPOTaAwWOXJg9aUtokvX-cB6acKKVT3KHPg0Pmaw
+
+###
+
+PUT http://localhost:8000/api/user/profile/changepassword/658f20a532bf11488ce83cd2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjU4ZjIwYTUzMmJmMTE0ODhjZTgzY2QyIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA0MTc5NDc4LCJleHAiOjE3MDQxODMwNzh9.p9T45f3ervNYty1GJLOzlZxilWiLSxyb81hLA2f-hQw
+
+{
+  "password": "rairudesu"
+}
+
+###
+
+POST http://192.168.8.166:8000/api/user/item/65a2437d8413435fd8141eae
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMjQzN2Q4NDEzNDM1ZmQ4MTQxZWFlIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA2MDE4NjIyLCJleHAiOjE3MDYwMjIyMjJ9.2a4hrEqO3U0PEI5nVODmnauC7suyGqPi4thmw5MHpDg
+
+{
+  "name": "SamsungA10S",
+  "description": "so so so so lost it somewhere at the cafeteria ......."
+}
+
+###
+
+POST http://192.168.8.166:8000/api/user/item/founditem/65a2437d8413435fd8141eae
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMjQzN2Q4NDEzNDM1ZmQ4MTQxZWFlIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA1OTA0MzA0LCJleHAiOjE3MDU5MDc5MDR9.Tzp1_uQz9vqLaU3-A1fI6BE4KxZV8jft7hU89mGjne8
+
+{
+  "itemid": "65a5daf9bd13ce63f815eaa9"
+}
+
+###
+
+GET http://192.168.8.166:8000/api/users/lost/items
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMjQzN2Q4NDEzNDM1ZmQ4MTQxZWFlIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA1OTA0MzA0LCJleHAiOjE3MDU5MDc5MDR9.Tzp1_uQz9vqLaU3-A1fI6BE4KxZV8jft7hU89mGjne8
+
+###
+
+GET http://192.168.8.166:8000/api/users/found/items
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMjQzN2Q4NDEzNDM1ZmQ4MTQxZWFlIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA1OTA0MzA0LCJleHAiOjE3MDU5MDc5MDR9.Tzp1_uQz9vqLaU3-A1fI6BE4KxZV8jft7hU89mGjne8
+
+###
+
+POST http://192.168.8.166:8000/api/user/item/deleteitem/65a2437d8413435fd8141eae
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVhMjQzN2Q4NDEzNDM1ZmQ4MTQxZWFlIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA1OTA0MzA0LCJleHAiOjE3MDU5MDc5MDR9.Tzp1_uQz9vqLaU3-A1fI6BE4KxZV8jft7hU89mGjne8
+
+{
+  "itemid": "65a5e2668e4ffdd2b4d7cd1c"
+}
+
+### ADMIN ###
+
+GET http://localhost:8000/api/users
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8000/api/users/658f1ff428137d636066112f
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8000/api/users/658f20a532bf11488ce83cd2
+Content-Type: application/json
+
+{
+  "firstname": "rairu",
+  "lastname": "crausus",
+  "email": "craususrhyle@gmail.com",
+  "password": "rairudesu"
+}
+
+###
+
+POST http://192.168.8.166:8000/api/otp
+Content-Type: application/json
+
+{
+  "email": "craususrhyle@gmail.com"
+}
+
+###
+
+POST http://192.168.8.166:8000/api/otp/get
+Content-Type: application/json
+
+{
+  "number": "653639"
+}
+
+###
+
+DELETE http://192.168.8.166:8000/api/otp
+Content-Type: application/json
+
+###
+
+POST http://192.168.8.166:8000/api/user/create/chatroom
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjViMWMzYzRmNTJlMTM3MzNiYTk3YzUwIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA2MjY1MTQ0LCJleHAiOjE3MDYyNjg3NDR9.ErL30y7qFCLZmDYwfp9QJqHJ3E2_oEt8ATtnZR8bDtI
+
+{
+  "users": ["65b011f50d548dee7b0be606", "65b011f50d548dee7b0be606"],
+  "room_name": "Owner"
+}
+
+### 
+
+POST http://192.168.8.166:8000/api/user/create/chat
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjViMWMzYzRmNTJlMTM3MzNiYTk3YzUwIiwiZW1haWwiOiJjcmF1c3Vzcmh5bGVAZ21haWwuY29tIiwiaWF0IjoxNzA2MjY1MTQ0LCJleHAiOjE3MDYyNjg3NDR9.ErL30y7qFCLZmDYwfp9QJqHJ3E2_oEt8ATtnZR8bDtI
+
+{
+  "room_id": "65b34834905c41db518e9442",
+  "userid": "65b011f50d548dee7b0be606",
+  "message": "Yooooo"
+}
